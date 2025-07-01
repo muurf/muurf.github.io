@@ -1,0 +1,355 @@
+/* Universal */
+/* GENIUS IDEA!!! ANIMATION OF A PENGUIN WALKING IN THE BACKGROUND LEAVING FOOTPRINTS!!! AMAZING!! GENIUS!!! */
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+} */
+
+body { 
+    display: block;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+/* End of Universal */
+
+/* MOBILE HAMBURGER SECTION  */
+
+#hamburger-nav {
+    display: none;
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;   
+}
+.menu-links {  
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.menu-links li {
+    list-style: none;
+}
+.menu-links.open {
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+} 
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+} 
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+} 
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+/* END OF HAMBURGER SECTION */
+
+/* Note section */
+/* checklist: 
+    make sure to accomodate for phone/mobile version
+    make sure minimizing works smoothly
+    make sure still nice even when "-" , "+" zoom/in/out, still aint got it down
+
+/* 01: This section covers the links and ul lists. */
+ul {
+    display: flex;
+    list-style-type: none;
+    color: #a28089;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 0rem 1.5rem;
+    color: black;
+}
+
+a:visited {
+ color: black;
+}
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: rgb(181,181,181);
+    text-underline-offset: 1rem;
+
+}
+/* End of Section 01 */
+
+/* 02: This section covers the navigation bar */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* not sure if space-between or space-around yet, based on L/R margins  */
+    
+    padding: 1rem;
+    /* background-color: #a0d2eb; may use this or the one below, not sure */ 
+    background: #E5EAF5;
+    padding: 0rem calc((100vw -1300 px ) /2 );
+}
+.nav-links {
+    display: flex;
+    padding: 1rem;
+}
+/* .logo {
+    padding: 0 2rem;
+} */
+
+/* End of Section 02 */
+
+/* 03: This section covers the Hero section */
+.hero {
+    background: #E5EAF5;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) /2 );
+    
+}
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+}
+.hero-body h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-body h2 span {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color:#6eadec;
+    /* text-shadow: 10px 50px 5px; ....super ugly */
+}
+.hero-body h3 span {
+    text-decoration: underline;
+    color: #8C1D40;
+    text-underline-offset: 5px;
+}
+.hero-body h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.hero-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    flex: 1;
+}
+.nav-button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+/* doesnt seem to work, maybe revisit? .nav-button:hover {opacity: 1} */
+
+.nav-button:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-contact {
+    background-color: #fd5c63;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    border: solid;
+
+    transition: 0.3s;
+}
+#nav-projects {
+    background-color: #438bd2;
+    border-radius: 10px;
+    padding: 15px;
+    border: solid;
+}
+
+/* .hero-image {
+    width: 100%;
+    height: 100%;
+} */
+/* End of Section 03 */
+/* 04: This section covers the contact.html page */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #E5EAF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    background: #E5EAF5;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3 {
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    border-radius: 10px;
+}
+form button {
+    padding: 15px;
+    background-color: #fd5c63;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none; 
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+#silly {
+    background-color: transparent;
+    color:transparent;
+} 
+@media (max-width: 800px) {
+    .container inputs{
+        width: 500px;
+    }
+
+} 
+/* 05: This Section covers the Projects.html page */
+.projects {
+    background-color:#E5EAF5;
+}
+.projects-header {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+ .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 3rem;
+ }
+
+ .project-card {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+ }
+
+ .project-card:hover {
+    /* background-color: black; */
+    /* color: white; */
+    color: white;
+    background-color: gray;
+    transform: translateY(-10px)scale(1.02);
+ }
+
+ .cards {
+    width: 20vw;
+    border-radius: 1rem;
+ }
+ .project-card h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+ }
+ /* .project-buttons {
+    
+ } */
+ #git-img {
+    width: 5vw;
+    height: 5vw;
+
+ }
+ .card-button {
+    background-color: transparent;
+    border: 1px solid transparent;
+ }

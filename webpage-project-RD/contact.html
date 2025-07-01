@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <header class = "nav-bar">
+            <nav class = "navigation">
+                <a href = "index.html"> <img src = "images/penguin-blue-background.jpg" alt = "placehold" width = "48" height = "48" class = "logo"> </a>
+                <!-- make sure to change class to logo later OR change sizing to height and width auto -->
+                 <!-- if do silly thing, put here -->
+                 <ul class = "top-links">
+                    <li class = "nav-links"> <a href = "index.html"> Home </a> </li>
+                    <li class = "nav-links"> <a href = "projects.html"> Projects </a></li>
+                    <li class = "nav-links"> <a href = "contact.html"> Contact </a></li>
+                 </ul>
+            </nav>
+        </header>
+    </nav>
+    
+        <!-- MOBILE SECTION BELOW -->
+        
+        <nav id = "hamburger-nav">
+            <div class = "icon"> Justin </div>
+            <div class = "hamburger-menu"> 
+             <div class = "hamburger-icon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+             <div class = "menu-links">
+                    <li class = "nav-links"> <a href = "#home" onclick = "toggleMenu()"> Home </a> </li>
+                    <li class = "nav-links"> <a href = "#projects" onclick = "toggleMenu()"> Projects </a></li>
+                    <li class = "nav-links"> <a href = "#contact" onclick = "toggleMenu()" > Contact </a></li>
+                </div>
+            </div>
+        </nav>
+    <!-- MOBILE SECTION END -->
+     <div class = "container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h3>Contact me here! :D </h3>
+            <input type="hidden" name="access_key" value="14b3ccbb-4416-430a-8e3f-b2df6209ffc9">
+            <input type="text" name="name" placeholder = "Your Name" required>
+            <input type="email" name="email" placeholder = "Your Email" required>
+            <textarea name="message" rows = "5" placeholder = "What would you like to say?" required></textarea>
+
+            <!-- Optional Honey Pot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button id = "contact-button" type = "submit"> Send </button>
+            <a href = "https://youtu.be/FUaaGInT_R8?t=2" target = "_blank"> <button id = "silly"> </button> </a>
+        </form>
+     </div>
+     <script src = " https://smtpjs.com/v3/smtp.js"></script>
+     <script src = "email.js"> </script>
+</body>
+</html>

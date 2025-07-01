@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Roughdraft</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NOTES -->
+ <!-- MUST REVISIT HAMBURGER SECTION, NOT ALIGNING PROPERLY
+ MUST REVISIT MOBILE SECTION FOR VERTICAL VERSION TESTED ON PHONE DISPLAY -->
+<nav id = "desktop-nav">
+    <header class = "nav-bar">
+        <nav class = "navigation">
+            <a href = "index.html"> <img src = "images/penguin-blue-background.jpg" alt = "placehold" width = "48" height = "48" class = "logo"> </a>
+            <!-- make sure to change class to logo later OR change sizing to height and width auto -->
+             <!-- if do silly thing, put here -->
+             <ul class = "top-links">
+                <li class = "nav-links"> <a href = "index.html"> Home </a> </li>
+                <li class = "nav-links"> <a href = "projects.html"> Projects </a></li>
+                <li class = "nav-links"> <a href = "contact.html"> Contact </a></li>
+             </ul>
+        </nav>
+    </header>
+</nav>
+
+    <!-- MOBILE SECTION BELOW -->
+    
+    <nav id = "hamburger-nav">
+        <div class = "icon"> Justin </div>
+        <div class = "hamburger-menu"> 
+         <div class = "hamburger-icon" onclick = "toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class = "menu-links">
+                <li class = "nav-links"> <a href = "#home" onclick = "toggleMenu()"> Home </a> </li>
+                <li class = "nav-links"> <a href = "#projects" onclick = "toggleMenu()"> Projects </a></li>
+                <li class = "nav-links"> <a href = "#contact" onclick = "toggleMenu()" > Contact </a></li>
+            </div>
+        </div>
+    </nav>
+    <!--  END OF MOBILE SECTION -->
+    
+    <!-- BEGINNING OF PROJECTS SECTION -->
+     <section class = "projects">
+        <h3 class = "projects-header">Recent Projects </h3>
+        <div class = "project-container">
+
+            <!-- ONCE I LEARN WHAT A LIVE DEMO IS I CAN ADD THE BUTTON, TOO MUCH WORK FOR NOW  -->
+
+            <!-- <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-1" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div class = "proj-buttons">
+                <button class = "card-button"> Live Demo </button> 
+                <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div>
+
+            <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-2" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div>
+                <button class = "card-button"> Live Demo </button> 
+                 <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div>
+
+            <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-2" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div>
+                <button class = "card-button"> Live Demo </button> 
+                 <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div> -->
+
+            <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-1" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div class = "proj-buttons">
+                
+                <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div>
+
+            <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-2" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div>
+            
+                 <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div>
+
+            <div class = "project-card">
+                <img src = "images/penguin-card.webp" class = "cards" id = "card-2" alt = "cardjitsu">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Magni laborum.
+                </p>
+                <div>
+         
+                 <button class = "card-button"> <a href = "https://github.com/muurf" 
+                    target = "_blank"> <img src = "images/gitcat.png" id = "git-img"> </a> </button>
+                    </div>
+            </div>
+
+            </div>
+
+    
+        </div>
+     </section>
